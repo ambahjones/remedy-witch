@@ -84,13 +84,18 @@ hr {
 /*specific element styling in main*/
 .nonHomeLogo {
   display: block;
-  margin: 1.5rem auto;
-  height: 20rem;
+  margin: 2.5rem auto;
+  height: 40rem;
 }
 
 .sectionHeader {
+  padding: 2rem 0;
   font-family: "Quicksand", sans-serif;
-  font-size: 7.2rem;
+  font-size: 8.2rem;
+}
+
+.headerImg {
+  height: 9rem;
 }
 
 #services {
@@ -118,6 +123,10 @@ hr {
 
 .prices {
   font-size: 2rem;
+}
+
+.serviceBreak {
+  width: 50%;
 }
 
 /*footer styles*/
