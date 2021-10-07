@@ -15,19 +15,6 @@ html {
   flex-wrap: wrap;
 }
 
-/*mobile nav styles*/
-.hambuger {
-  display: hidden;
-}
-
-.close {
-  display: none;
-}
-
-.mobileNav {
-  display: none;
-}
-
 /*head and nav styles*/
 header {
   position: fixed;
@@ -140,6 +127,9 @@ h2 {
 /*footer styles*/
 footer {
   height: 15rem;
+}
+
+.footerWrapper {
   justify-content: space-around;
   align-items: center;
 }
@@ -166,4 +156,20 @@ p.socialLinks {
 .socialLinks img {
   margin: 0;
   width: 7.5rem;
+}
+
+.designedBy {
+  font-size: 1.8rem;
+  text-align: right;
+  line-height: 6rem;
+  padding-right: 5rem;
+}
+
+.designedBy a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.designedBy a:hover {
+  text-decoration: underline;
 }
