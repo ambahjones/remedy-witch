@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  --main-color: #ffffff;
+  --main-text-color: #000000;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*head and nav styles*/
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-color);
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 4.6rem;
+  margin: 1.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  height: 10rem;
+}
+
+li.navLinks {
+  list-style: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2.75rem;
+}
+
+/*sets main below fixed header*/
+main {
+  margin-top: 15rem;
+}
