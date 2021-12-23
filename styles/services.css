@@ -61,13 +61,19 @@ main {
 
 /*general element styling in main*/
 h2 {
+  padding: 2rem 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 8.2rem;
+}
+
+h3 {
   font-size: 4.8rem;
   text-align: center;
   margin: 2rem 0;
   font-family: "Charm", cursive;
 }
 
-h3 {
+h4 {
   font-size: 3rem;
 }
 
@@ -82,20 +88,37 @@ hr {
 }
 
 /*specific element styling in main*/
-.nonHomeLogo {
-  display: block;
-  margin: 2.5rem auto;
-  height: 40rem;
+.logoWrap {
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+  padding-bottom: 5rem;
 }
-
-.sectionHeader {
-  padding: 2rem 0;
-  font-family: "Quicksand", sans-serif;
-  font-size: 8.2rem;
+.nonHomeLogo {
+  margin: 2.5rem 0 0 0;
+  height: 45rem;
 }
 
 .headerImg {
   height: 9rem;
+}
+
+.policyWrap {
+  width: 70%;
+}
+
+.policyHeader {
+  padding: 0px;
+}
+
+#policies-header-img {
+  height: 5rem;
+}
+
+.policyDesc {
+  width: 75%;
+  margin: 1rem auto;
+  font-size: 1.6rem;
+  text-align: left;
 }
 
 #services {
@@ -129,11 +152,23 @@ hr {
   width: 50%;
 }
 
-/*footer styles*/
-footer {
-  height: 15rem;
+.seriesPackages {
+  margin: 3rem auto;
+  justify-content: space-evenly;
 }
 
+.series,
+.packages {
+  width: 40%;
+}
+
+.savings {
+  font-size: 2rem;
+  font-family: "Charm", cursive;
+  margin-top: -2rem;
+}
+
+/*footer styles*/
 .footerWrapper {
   justify-content: space-around;
   align-items: center;
@@ -164,9 +199,9 @@ p.socialLinks {
 }
 
 .designedBy {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: right;
-  line-height: 6rem;
+  line-height: 2.5rem;
   padding-right: 5rem;
 }
 
