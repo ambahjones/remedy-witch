@@ -87,6 +87,16 @@ a.bookingButton {
   margin: 1rem auto;
 }
 
+/*style for temporary email link until form can be made functional*/
+#temp-email-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+#temp-email-link:hover {
+  text-decoration: underline;
+}
+
 /*styles for contact form*/
 .contactForm {
   display: block;
