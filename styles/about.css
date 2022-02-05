@@ -62,6 +62,20 @@ h2 {
   margin-bottom: 1.6rem;
 }
 
+h3 {
+  margin: 3rem 0 6rem 0;
+  font-size: 6rem;
+}
+
+img {
+  border-radius: 2rem;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
 #head-shot {
   width: 50%;
 }
@@ -85,11 +99,61 @@ figcaption a:hover {
   text-decoration: underline;
 }
 
+.bioWrap {
+  margin: 4rem 0;
+}
+
 .bioP {
   width: 60%;
   margin: 2rem auto;
   font-size: 2rem;
   text-align: left;
+}
+
+.picGrid {
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  width: 78%;
+  height: 90rem;
+  margin: 3rem auto;
+}
+
+.roomImgOdd {
+  width: 30rem;
+}
+
+.roomImgEv {
+  width: 16rem;
+}
+
+#pic1 {
+  z-index: 1;
+  grid-column: 1 / 11;
+  grid-row: 1 / 5;
+}
+
+#pic2 {
+  z-index: 1;
+  grid-column: 11 / 13;
+  grid-row: 1 / 5;
+}
+
+#pic3 {
+  z-index: 3;
+  grid-column: 10 / 13;
+  grid-row: 8 / 12;
+}
+
+#pic4 {
+  z-index: 1;
+  grid-column: 1 / 6;
+  grid-row: 10 / 13;
+}
+
+#pic5 {
+  width: 93rem;
+  grid-column: 2 / 13;
+  grid-row: 2 / 11;
 }
 
 /*footer styles*/
