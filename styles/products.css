@@ -6,7 +6,8 @@ html {
   font-size: 10px;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-  --main-color: #ffffff;
+  --main-color: hsl(0, 0%, 100%);
+  --main-variant: hsl(0, 0%, 50%);
   --main-text-color: #000000;
 }
 
@@ -55,4 +56,20 @@ li.navLinks {
 /*sets main below fixed header*/
 main {
   margin-top: 15rem;
+}
+
+.frame::before {
+  position: absolute;
+  background-color: var(--main-variant);
+  z-index: 2;
+}
+
+.frame {
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+}
+#full-retail {
+  width: 100%;
+  border-radius: 2rem;
 }
