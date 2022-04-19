@@ -87,12 +87,19 @@ hr {
   border: 1px solid var(--main-text-color);
 }
 
+@media only screen and (max-width: 500px) {
+  article {
+    width: 100%;
+  }
+}
+
 /*specific element styling in main*/
 .logoWrap {
   justify-content: space-evenly;
   margin-top: 2.5rem;
   padding-bottom: 5rem;
 }
+
 .nonHomeLogo {
   margin: 2.5rem 0 0 0;
   height: 45rem;
@@ -122,8 +129,20 @@ hr {
 }
 
 #services {
+  flex-direction: row;
   justify-content: space-evenly;
   margin: 3rem auto;
+}
+
+@media only screen and (max-width: 500px) {
+  #services {
+    flex-direction: column;
+  }
+}
+
+.times {
+  font-size: 1.8rem;
+  margin: 1.5rem;
 }
 
 #massage-rituals,

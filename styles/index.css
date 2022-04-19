@@ -32,6 +32,13 @@ h1 {
   margin: 1.5rem;
 }
 
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.4rem;
+    margin: 1rem;
+  }
+}
+
 header a {
   text-decoration: none;
   color: var(--main-text-color);
@@ -64,9 +71,25 @@ main {
   margin: 0 auto;
 }
 
-/*set up for text paragraph*/
+@media only screen and (max-width: 500px) {
+  #home-page-logo {
+    width: 90%;
+    height: auto;
+  }
+}
+
 #home-page-text {
-  height: 20rem;
+  width: 55%;
+  margin: 5rem auto;
+  font-size: 2.1rem;
+  text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+  #home-page-text {
+    width: 90%;
+    font-size: 1.6rem;
+  }
 }
 
 /*booking link styles*/
@@ -106,11 +129,23 @@ a.bookingButton {
   text-align: left;
 }
 
+@media only screen and (max-width: 500px) {
+  .contactForm {
+    width: 100%;
+  }
+}
+
 h2 {
   font-size: 4.8rem;
   text-align: center;
   margin: 2rem 0;
   font-family: "Charm", cursive;
+}
+
+@media only screen and (max-width: 500px) {
+  h2 {
+    font-size: 2.8rem;
+  }
 }
 
 .formComponent {
@@ -139,9 +174,21 @@ footer {
   height: 15rem;
 }
 
+@media only screen and (max-width: 500px) {
+  footer {
+    height: auto;
+  }
+}
+
 .footerWrapper {
   justify-content: space-around;
   align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .footerWrapper {
+    flex-wrap: wrap;
+  }
 }
 
 .tradeMarkP {
@@ -152,11 +199,27 @@ footer {
   font-size: 2rem;
 }
 
-p.socialLinks {
+p.socialLinks, .phoneNum {
   margin: 0px;
   display: inline-block;
   font-size: 1.8rem;
   width: 15rem;
+}
+
+@media only screen and (max-width: 500px) {
+  p.socialLinks {
+    width: 30%;
+  }
+
+  .phoneNum {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .phoneNum {
+    width: 100%;
+  }
 }
 
 .phoneNum a {
