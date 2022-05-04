@@ -1,59 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 10px;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  --main-color: #ffffff;
-  --main-text-color: #000000;
-}
-
-/*universal flex class styling*/
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*head and nav styles*/
-header {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--main-color);
-  justify-content: space-between;
-  font-family: "Quicksand", sans-serif;
-}
-
-h1 {
-  font-size: 4.6rem;
-  margin: 1.5rem;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-nav {
-  height: 10rem;
-}
-
-li.navLinks {
-  list-style: none;
-  display: inline-block;
-  font-size: 2rem;
-  margin: 2.75rem;
-}
-
 /*sets main below fixed header*/
 main {
   margin-top: 10rem;
@@ -134,26 +78,18 @@ hr {
   margin: 3rem auto;
 }
 
-@media only screen and (max-width: 500px) {
-  #services {
-    flex-direction: column;
-  }
-}
-
 .times {
   font-size: 1.8rem;
   margin: 1.5rem;
 }
 
-#massage-rituals,
-#skin-care,
-#add-ons {
+.priceSec {
   width: 30%;
   align-items: center;
 }
 
 .serviceSection {
-  width: 95%;
+  width: 80%;
   margin: 3rem auto;
 }
 
@@ -161,6 +97,7 @@ hr {
   width: 75%;
   margin: 1rem auto;
   font-size: 1.8rem;
+  text-align: left;
 }
 
 .prices {
@@ -173,12 +110,6 @@ hr {
 
 .seriesPackages {
   margin: 3rem auto;
-  justify-content: space-evenly;
-}
-
-.series,
-.packages {
-  width: 40%;
 }
 
 .savings {
@@ -187,48 +118,33 @@ hr {
   margin-top: -2rem;
 }
 
-/*footer styles*/
-.footerWrapper {
-  justify-content: space-around;
-  align-items: center;
-}
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 3.6rem;
+  }
 
-.tradeMarkP {
-  font-size: 2.8rem;
-}
+  h4 {
+    font-size: 2.4rem;
+  }
 
-.tradeMarkIcon {
-  font-size: 2rem;
-}
+  .logoWrap {
+    flex-wrap: wrap;
+  }
 
-p.socialLinks {
-  margin: 0px;
-  display: inline-block;
-  font-size: 1.8rem;
-  width: 15rem;
-}
+  .policyWrap {
+    margin-top: 3.5rem;
+    width: 100%;
+  }
 
-.phoneNum a {
-  color: var(--main-text-color);
-}
+  #services {
+    flex-direction: column;
+  }
 
-.socialLinks img {
-  margin: 0;
-  width: 7.5rem;
-}
+  .priceSec {
+    width: 100%;
+  }
 
-.designedBy {
-  font-size: 1.6rem;
-  text-align: right;
-  line-height: 2.5rem;
-  padding-right: 5rem;
-}
-
-.designedBy a {
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-
-.designedBy a:hover {
-  text-decoration: underline;
+  .serviceDesc {
+    width: 90%;
+  }
 }

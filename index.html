@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Charm&family=Quicksand:wght@300&family=Sacramento&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header class="flex">
-        <h1><a href="index.html">The Remedy Witch</a></h1>
 
-        <nav>
+        <nav class="flex navBar">
+            <h1><a href="index.html">The Remedy Witch</a></h1>
+
             <ul class="navList">
                 <li class="navLinks"><a href="about.html">About</a></li>
                 <li class="navLinks"><a href="location.html">Location</a></li>
@@ -23,6 +25,11 @@
                 <li class="navLinks"><a href="products.html">Products</a></li>
                 <li class="navLinks"><a href="events.html">Events</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
 
     </header>
@@ -70,24 +77,28 @@
             <p class="phoneNum">
                 <a href="tel:+1-609-751-2787">(609) 751-2787</a>
             </p>
-            <p class="socialLinks emailIcon">
-                <a href="mailto:remedywitch@gmail.com">
-                    <img src="./images/icons/4490614_email_internet_media_social_social media_icon.png" alt="">
-                </a>
-            </p>
-            <p class="socialLinks facebookIcon">
-                <a href="https://m.facebook.com/theremedywitch/" target="_blank">
-                    <img src="./images/icons/4490615_facebook_internet_media_social_social media_icon.png" alt="">
-                </a>
-            </p>
-            <p class="socialLinks instagramIcon">
-                <a href="https://www.instagram.com/theremedywitch/" target="_blank">
-                    <img src="./images/icons/4490619_instagram_internet_media_social_social media_icon.png" alt="">
-                </a>
-            </p>
+            <div class="socialWrap">
+                <div class="socialLinks emailIcon">
+                    <a href="mailto:remedywitch@gmail.com">
+                        <img src="./images/icons/4490614_email_internet_media_social_social media_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="socialLinks facebookIcon">
+                    <a href="https://m.facebook.com/theremedywitch/" target="_blank">
+                        <img src="./images/icons/4490615_facebook_internet_media_social_social media_icon.png" alt="">
+                    </a>
+                </div>
+                <div class="socialLinks instagramIcon">
+                    <a href="https://www.instagram.com/theremedywitch/" target="_blank">
+                        <img src="./images/icons/4490619_instagram_internet_media_social_social media_icon.png" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
 
         <p class="designedBy">Site by <a href="https://ambercodes.dev" target="_blank">Amber Jones</a></p>
     </footer>
+
+    <script src="trw.js"></script>
 </body>
 </html>
