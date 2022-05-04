@@ -31,7 +31,7 @@ img {
   text-align: left;
 }
 
-#hours p {
+#hours .p {
   font-size: 2.6rem;
 }
 
@@ -40,7 +40,7 @@ img {
   grid-row: 2 / 4;
 }
 
-#retail-intro p {
+#retail-intro .p {
   font-size: 2.4rem;
 }
 
@@ -109,20 +109,30 @@ img {
   width: 20rem;
   height: 30rem;
 }
+
 #hemp-img img {
   width: 28rem;
 }
 
 @media only screen and (max-width: 1024px) {
   #prod-grid {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 4.8rem;
+  }
+
+  img {
+    width: 150%;
+  }
+
   #prod-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-bottom: 2rem;
   }
 
   #hours, 
@@ -137,7 +147,83 @@ img {
     margin-top: 2rem;
   }
 
+  #hours .p {
+    font-size: 1.8rem;
+  }
+
+  #retail-intro .p {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    width: 80%;
+    height: auto;
+  }
+
+  #sab-logo {
+    width: 100%;
+  }
+
   #hemp-img {
     display: none;
+  }
+
+  #poc-org-img .frame {
+    width: 60%;
+    height: 40rem;
+  }
+
+  #cbd {
+    width: 120%;
+    margin-left: -8.5rem;
+    margin-top: -7.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #poc-org-img .frame {
+    width: 60%;
+    height: 30rem;
+  }
+  
+  #cbd {
+    width: 140%;
+    margin-left: -8.5rem;
+    margin-top: -7.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    width: 180%;
+  }
+
+  #prod-grid {
+    width: 80%;
+  }
+  
+  .frame {
+    width: 55%;
+    height: 30rem;
+  }
+
+  .logo {
+    width: 80%;
+    height: auto;
+  }
+
+  #sab-logo {
+    width: 100%;
+  }
+
+  #poc-org-img .frame {
+    width: 80%;
+    height: 30rem;
+  }
+
+  #cbd {
+    width: 170%;
+    margin-left: -12.5rem;
+    margin-top: -7.5rem;
   }
 }
