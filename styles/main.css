@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  font-size: 10px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  --main-color: #ffffff;
+  --main-text-color: #000000;
+}
+
+.flex {
+  display: flex;
+}
+
+/*sets main below fixed header*/
+main {
+    margin-top: 15rem;
+    z-index: 0;
+}
+
+/*all nav styles*/
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  align-items: center;
+  background-color: var(--main-color);
+  font-family: "Quicksand", sans-serif;
+}
+
+.navBar {
+  height: 7rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 4.6rem;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 3.6rem;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.8rem;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2.2rem;
+    margin: 1rem;
+  }
+}
+
+header a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: 0.7s ease;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+li.navLinks {
+  list-style: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2.75rem;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+.bar {
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--main-text-color);
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(1.3rem) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-1.3rem) rotate(-45deg);
+  }
+
+  .navList {
+    position: fixed;
+    right: -100%;
+    top: 10rem;
+    width: 60%;
+    background-color: var(--main-color);
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navList.active {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navList {
+    width: 100%;
+  }
+}
+
+/*footer styles*/
+footer {
+  height: 15rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    height: auto;
+  }
+}
+
+.footerWrapper {
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerWrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.tradeMarkP {
+  font-size: 2.8rem;
+}
+
+.tradeMarkIcon {
+  font-size: 2rem;
+}
+
+.socialLinks,
+.phoneNum {
+  margin: 0px;
+  display: inline-block;
+  font-size: 1.8rem;
+  width: 15rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .tradeMarkP {
+    width: 100%;
+  }
+
+  .socialWrap {
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  .socialLinks {
+    width: 30%;
+  }
+
+  .phoneNum {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .socialWrap {
+    width: 100%;
+  }
+
+  .phoneNum {
+    width: 100%;
+  }
+}
+
+.phoneNum a {
+  color: var(--main-text-color);
+}
+
+.socialLinks img {
+  margin: 0;
+  width: 7.5rem;
+}
+
+.designedBy {
+  font-size: 1.8rem;
+  text-align: right;
+  line-height: 6rem;
+  padding-right: 5rem;
+}
+
+.designedBy a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.designedBy a:hover {
+  text-decoration: underline;
+}

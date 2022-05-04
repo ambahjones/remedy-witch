@@ -1,57 +1,3 @@
-* {
-  margin: 0;
-}
-
-html {
-  font-size: 10px;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  --main-color: #ffffff;
-  --main-text-color: #000000;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*head and nav styles*/
-header {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--main-color);
-  justify-content: space-between;
-  font-family: "Quicksand", sans-serif;
-}
-
-h1 {
-  font-size: 4.6rem;
-  margin: 1.5rem;
-}
-
-header a {
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-nav {
-  height: 10rem;
-}
-
-li.navLinks {
-  list-style: none;
-  display: inline-block;
-  font-size: 2rem;
-  margin: 2.75rem;
-}
-
 /*sets main below fixed header*/
 main {
   margin-top: 10rem;
@@ -61,7 +7,7 @@ main {
 h2 {
   padding: 2rem 0;
   font-family: "Quicksand", sans-serif;
-  font-size: 2.8rem;
+  font-size: 4.2rem;
 }
 
 .locationWrapper {
@@ -74,61 +20,46 @@ h2 {
   height: 45rem;
 }
 
-.locationInfo {
+.logoWrap {
   width: 50%;
 }
 
 #pathways-logo {
   width: 75%;
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 .mapWrap {
   margin-bottom: 5rem;
 }
 
-/*footer styles*/
-.footerWrapper {
-  justify-content: space-around;
-  align-items: center;
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .locationWrapper {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+  }
+
+  .logoWrap {
+    width: 100%;
+  }
+
+  .nonHomeLogo {
+    margin: 0;
+    height: 35rem;
+  }
+
+  #pathways-logo {
+    width: 50%;
+  }
 }
 
-.tradeMarkP {
-  font-size: 2.8rem;
-}
-
-.tradeMarkIcon {
-  font-size: 2rem;
-}
-
-p.socialLinks {
-  margin: 0px;
-  display: inline-block;
-  font-size: 1.8rem;
-  width: 15rem;
-}
-
-.phoneNum a {
-  color: var(--main-text-color);
-}
-
-.socialLinks img {
-  margin: 0;
-  width: 7.5rem;
-}
-
-.designedBy {
-  font-size: 1.6rem;
-  text-align: right;
-  line-height: 2.5rem;
-  padding-right: 5rem;
-}
-
-.designedBy a {
-  text-decoration: none;
-  color: var(--main-text-color);
-}
-
-.designedBy a:hover {
-  text-decoration: underline;
+@media only screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.8rem;
+  }
 }
