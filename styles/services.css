@@ -127,6 +127,10 @@ hr {
     font-size: 2.4rem;
   }
 
+  .nonHomeLogo {
+    height: 35rem;
+  }
+
   .logoWrap {
     flex-wrap: wrap;
   }
@@ -146,5 +150,11 @@ hr {
 
   .serviceDesc {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nonHomeLogo {
+    height: 30rem;
   }
 }
