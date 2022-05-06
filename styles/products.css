@@ -15,8 +15,17 @@ h2 {
   text-align: left;
 }
 
-img {
+.img {
   width: 45rem;
+}
+
+.logoWrap {
+  width: 100%;
+}
+
+.nonHomeLogo {
+  margin: 5rem 0 0 0;
+  height: 45rem;
 }
 
 #prod-grid {
@@ -125,8 +134,17 @@ img {
     font-size: 4.8rem;
   }
 
-  img {
+  .img {
     width: 150%;
+  }
+
+  .logoWrap {
+    width: 100%;
+  }
+
+  .nonHomeLogo {
+    margin: 0;
+    height: 35rem;
   }
 
   #prod-grid {
@@ -181,6 +199,14 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .logWrap {
+    width: 100%;
+  }
+
+  .nonHomeLogo {
+    height: 30rem;
+  }
+
   #poc-org-img .frame {
     width: 60%;
     height: 30rem;
@@ -194,7 +220,7 @@ img {
 }
 
 @media only screen and (max-width: 400px) {
-  img {
+  .img {
     width: 180%;
   }
 
