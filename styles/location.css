@@ -10,6 +10,14 @@ h2 {
   font-size: 4.2rem;
 }
 
+.addressWrapper {
+  margin: 5rem 0;
+}
+
+.address {
+  font-size: 1.5rem;
+}
+
 .locationWrapper {
   justify-content: space-evenly;
   margin: 5rem 0;
