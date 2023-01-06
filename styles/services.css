@@ -39,7 +39,6 @@ hr {
 
 /*specific element styling in main*/
 .logoWrap {
-  justify-content: space-evenly;
   margin-top: 2.5rem;
   padding-bottom: 5rem;
 }
@@ -54,7 +53,8 @@ hr {
 }
 
 .policyWrap {
-  width: 70%;
+  width: 90%;
+  margin: 5rem auto;
 }
 
 .policyHeader {
