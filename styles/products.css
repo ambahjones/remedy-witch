@@ -85,48 +85,6 @@ h2 {
   width: 45rem;
 }
 
-#sab-info {
-  grid-column: 7 / 12;
-  grid-row: 6 / 8;
-}
-
-#sab-info,
-#poc-org-info a {
-  color: #303359;
-}
-
-#poc-org-info {
-  grid-column: 2 / 7;
-  grid-row: 9 / 11;
-}
-
-#poc-org-img {
-  grid-column: 8 / 13;
-  grid-row: 8 / 12;
-}
-
-#cbd {
-  margin-left: -4.5rem;
-}
-
-#hemp-img {
-  grid-column: 4 / 13;
-  grid-row: 10 / 13;
-}
-
-#poc-org-img .frame {
-  width: 35rem;
-  height: 45rem;
-}
-
-#hemp-img .frame {
-  width: 20rem;
-  height: 30rem;
-}
-
-#hemp-img img {
-  width: 28rem;
-}
 
 @media only screen and (max-width: 1024px) {
   #prod-grid {
@@ -158,13 +116,7 @@ h2 {
     margin-bottom: 2rem;
   }
 
-  #hours,
-  #retail-intro,
-  #display,
-  #sab-imgs,
-  #sab-info,
-  #poc-org-info,
-  #poc-org-img {
+  #hours {
     grid-column: 1 / 2;
     grid-row: auto;
     margin-top: 2rem;
@@ -182,25 +134,6 @@ h2 {
     width: 80%;
     height: auto;
   }
-
-  #sab-logo {
-    width: 100%;
-  }
-
-  #hemp-img {
-    display: none;
-  }
-
-  #poc-org-img .frame {
-    width: 60%;
-    height: 40rem;
-  }
-
-  #cbd {
-    width: 120%;
-    margin-left: -8.5rem;
-    margin-top: -7.5rem;
-  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -210,17 +143,6 @@ h2 {
 
   .nonHomeLogo {
     height: 30rem;
-  }
-
-  #poc-org-img .frame {
-    width: 60%;
-    height: 30rem;
-  }
-
-  #cbd {
-    width: 140%;
-    margin-left: -8.5rem;
-    margin-top: -7.5rem;
   }
 }
 
@@ -241,20 +163,5 @@ h2 {
   .logo {
     width: 80%;
     height: auto;
-  }
-
-  #sab-logo {
-    width: 100%;
-  }
-
-  #poc-org-img .frame {
-    width: 80%;
-    height: 30rem;
-  }
-
-  #cbd {
-    width: 170%;
-    margin-left: -12.5rem;
-    margin-top: -7.5rem;
   }
 }
