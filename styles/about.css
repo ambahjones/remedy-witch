@@ -14,16 +14,12 @@ h3 {
 }
 
 img {
-  border-radius: 2rem;
+  border-radius: 1.5rem;
 }
 
-hr {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#head-shot {
-  width: 50%;
+#head-shot,
+#treatment-room {
+  width: 60%;
 }
 
 figcaption p {
@@ -60,6 +56,11 @@ figcaption a:hover {
   h2 {
     font-size: 4.8rem;
   }
+
+  #head-shot, 
+  #treatment-room {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -67,7 +68,8 @@ figcaption a:hover {
     font-size: 3.4rem;
   }
 
-  #head-shot {
+  #head-shot, 
+  #treatment-room {
     width: 80%;
   }
 
@@ -82,53 +84,12 @@ figcaption a:hover {
     font-size: 2.4rem;
   }
 
-  #head-shot {
+  #head-shot, 
+  #treatment-room {
     width: 90%;
   }
-}
 
-.picGrid {
-  display: grid;
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-  width: 78%;
-  height: 90rem;
-  margin: 3rem auto;
-}
-
-.roomImgOdd {
-  width: 30rem;
-}
-
-.roomImgEv {
-  width: 16rem;
-}
-
-#pic1 {
-  z-index: 1;
-  grid-column: 1 / 11;
-  grid-row: 1 / 5;
-}
-
-#pic2 {
-  z-index: 1;
-  grid-column: 11 / 13;
-  grid-row: 1 / 5;
-}
-
-#pic3 {
-  z-index: 3;
-  grid-column: 10 / 13;
-  grid-row: 8 / 12;
-}
-
-#pic4 {
-  z-index: 1;
-  grid-column: 1 / 6;
-  grid-row: 10 / 13;
-}
-
-#pic5 {
-  width: 93rem;
-  grid-column: 2 / 13;
-  grid-row: 2 / 11;
+  .bioP {
+    width: 90%;
+  }
 }

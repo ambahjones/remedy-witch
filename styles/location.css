@@ -10,31 +10,41 @@ h2 {
   font-size: 4.2rem;
 }
 
+p {
+  font-size: 2rem;
+}
+
+.studioAbout {
+  width: 60%;
+  margin: 0rem auto;
+  text-align: left;
+}
+
 .addressWrapper {
   margin: 5rem 0;
 }
 
 .address {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-.locationWrapper {
-  justify-content: space-evenly;
-  margin: 5rem 0;
+.studioLogoWrap {
+  width: 60%;
+  margin: 0 auto;
 }
 
-.nonHomeLogo {
-  margin: 5rem 0 0 0;
-  height: 45rem;
+.studioLogo {
+  max-width: 100%;
 }
 
-.logoWrap {
-  width: 50%;
+.studioFacadeWrap {
+  width: 60%;
+  margin: 5rem auto;
 }
 
-#pathways-logo {
-  width: 75%;
-  margin-top: 8rem;
+.studioFacade {
+  display: block;
+  max-width: 100%;
 }
 
 .mapWrap {
@@ -46,23 +56,23 @@ h2 {
     font-size: 2.8rem;
   }
 
-  .locationWrapper {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 5rem 0;
+  .studioFacadeWrap {
+    width: 90%;
+    margin: 5rem auto;
   }
 
-  .logoWrap {
-    width: 100%;
+  .studioAbout {
+    width: 90%;
+    margin: 0rem auto;
+  }
+  
+  .studioAbout p {
+    font-size: 1.5rem;
   }
 
-  .nonHomeLogo {
-    margin: 0;
-    height: 35rem;
-  }
-
-  #pathways-logo {
-    width: 50%;
+ .studioLogoWrap {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .mapWrap {
@@ -87,7 +97,4 @@ h2 {
     padding: 1rem 1rem;
   }
 
-  .nonHomeLogo {
-    height: 30rem;
-  }
 }
