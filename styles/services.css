@@ -6,7 +6,7 @@ main {
 /*general element styling in main*/
 h2 {
   padding: 2rem 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Lemon", cursive;
   font-size: 8.2rem;
 }
 
@@ -73,7 +73,7 @@ hr {
 }
 
 #services {
-  flex-direction: row;
+  //flex-direction: row;
   justify-content: space-evenly;
   margin: 3rem auto;
 }
@@ -84,8 +84,21 @@ hr {
 }
 
 .priceSec {
-  width: 30%;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  //width: 50%;
+  margin: 0 1rem;
+  //align-items: center;
+}
+
+.serviceImg {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.serviceImg img {
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 .serviceSection {
@@ -116,6 +129,11 @@ hr {
   font-size: 2rem;
   font-family: "Charm", cursive;
   margin-top: -2rem;
+}
+
+#massage-rituals,
+#skin-care {
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 768px) {
