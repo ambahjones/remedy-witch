@@ -15,9 +15,11 @@ h2 {
 }
 
 .p {
+  width: 60%;
+  margin: 2rem auto;
   padding: 1rem;
   font-size: 1.8rem;
-  text-align: left;
+  text-align: center;
 }
 
 .img {
@@ -37,7 +39,7 @@ h2 {
   display: grid;
   width: 80%;
   margin: 0 auto;
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
 #hours {
@@ -84,7 +86,6 @@ h2 {
   height: 14rem;
   width: 45rem;
 }
-
 
 @media only screen and (max-width: 1024px) {
   #prod-grid {

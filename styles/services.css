@@ -73,7 +73,7 @@ hr {
 }
 
 #services {
-  //flex-direction: row;
+  /*flex-direction: row;*/
   justify-content: space-evenly;
   margin: 3rem auto;
 }
@@ -86,9 +86,9 @@ hr {
 .priceSec {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  //width: 50%;
+  /*width: 50%;*/
   margin: 0 1rem;
-  //align-items: center;
+  /*align-items: center;*/
 }
 
 .serviceImg {
