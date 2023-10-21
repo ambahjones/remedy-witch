@@ -184,7 +184,14 @@ hr {
 }
 
 @media only screen and (max-width: 500px) {
+  .priceSec {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .nonHomeLogo {
     height: 30rem;
+  }
+  .serviceBreak {
+    display: none;
   }
 }
